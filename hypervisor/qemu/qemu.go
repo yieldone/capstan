@@ -275,10 +275,10 @@ func (c *VMConfig) vmArguments(version *Version) ([]string, error) {
 }
 
 func (c *VMConfig) vmMAC() (net.HardwareAddr, error) {
-	if c.MAC != "" {
+	//if c.MAC != "" {
 		return net.ParseMAC(c.MAC)
-	}
-	return util.GenerateMAC()
+	//}
+	//return util.GenerateMAC()
 }
 
 func (c *VMConfig) vmNetworking() ([]string, error) {
